@@ -3,7 +3,9 @@
 	<author>FearlessModding</author>
 	<version>1.0.0.0</version>
 	<title>
-		<en>LiquidLime</en>
+		<en>Liquid Lime</en>
+		<de>Flüssiger Kalk</de>
+		<fr>Chaux Liquide</fr>
 	</title>
 	
 	<description>
@@ -18,7 +20,7 @@ Ajoute de la chaux liquide au jeu pour les pulvérisateurs]]></fr>
 Fügt Liquid Lime zum Spiel für Sprayer hinzu]]></de>
 	</description>
 	
-	<iconFilename>hud/modIcon.dds</iconFilename>
+	<iconFilename>modIcon.dds</iconFilename>
 	
 	<multiplayer supported="true" />
 
@@ -44,7 +46,7 @@ Fügt Liquid Lime zum Spiel für Sprayer hinzu]]></de>
 	</storeItems>
 
 	<brands>
-		<brand name="FearlessModding" title="Fearless Modding" image="brand/brand_FM.dds" />
+		<brand name="FearlessModding" title="Fearless Modding" image="brand/brand_FearlessModding.dds" />
 	</brands>
 
 	<fillTypes filename="xml/fillTypes.xml" />
