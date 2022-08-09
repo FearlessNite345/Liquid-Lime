@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="67">
+	<author>FearlessModding</author>
+	<version>1.0.0.0</version>
+	<title>
+		<en>LiquidLime</en>
+	</title>
+	
+	<description>
+		<en><![CDATA[LiquidLime
+
+Adds Liquid Lime to the game for Sprayers]]></en>
+		<fr><![CDATA[LiquideChaux
+
+Ajoute de la chaux liquide au jeu pour les pulvérisateurs]]></fr>
+		<de><![CDATA[FlüssigKalk
+
+Fügt Liquid Lime zum Spiel für Sprayer hinzu]]></de>
+	</description>
+	
+	<iconFilename>hud/modIcon.dds</iconFilename>
+	
+	<multiplayer supported="true" />
+
+	<l10n>
+		<text name="filltype_liquidlime">
+            <en>Liquid Lime</en>
+			<de>Flüssiger Kalk</de>
+			<fr>Chaux Liquide</fr>
+        </text>
+		<text name="function_liquidlimepallet">
+			<en>Liquid Lime Pallet allows you to fill sprayers with LiquidLime</en>
+			<de>Liquid Lime Pallet ermöglicht es Ihnen, Sprühgeräte mit LiquidLime zu füllen</de>
+			<fr>Liquid Lime Pallet vous permet de remplir les pulvérisateurs avec LiquidLime</fr>
+		</text>
+	</l10n>
+
+	<extraSourceFiles>
+		<sourceFile filename="src/main.lua" />
+	</extraSourceFiles>
+
+	<storeItems>
+		<storeItem xmlFilename="objects/LiquidLimePallet/liquidLimePallet.xml" />
+	</storeItems>
+
+	<brands>
+		<brand name="FearlessModding" title="Fearless Modding" image="brand/brand_FM.dds" />
+	</brands>
+
+	<fillTypes filename="xml/fillTypes.xml" />
+</modDesc>
