@@ -3,6 +3,8 @@
     <storeData>
         <name>
             <en>Liquid Lime</en>
+            <de>Flüssigkalk</de>
+            <fr>Chaux Liquide</fr>
         </name>
         <functions>
             <function>$l10n_function_liquidlimepallet</function>
@@ -13,23 +15,17 @@
             <weight ignore="false"/>
         </specs>
         <image>objects/LiquidLimePallet/LiquidLimePallet.dds</image>
-        <price>650</price>
+        <price>1000</price>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
         <rotation>0</rotation>
-        <brand>FearlessModding</brand>
+        <brand>LIZARDFARMING</brand>
         <category>pallets</category>
         <financeCategory>OTHER</financeCategory>
         <shopHeight>1.5</shopHeight>
-        <vertexBufferMemoryUsage>190464</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>39680</indexBufferMemoryUsage>
-        <textureMemoryUsage>2031616</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <storeIconRendering>
             <settings cameraXRot="-15" cameraYRot="35"/>
         </storeIconRendering>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
     <base>
         <typeDesc>TBH</typeDesc>

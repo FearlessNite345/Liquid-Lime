@@ -25,7 +25,7 @@ function main:loadMap()
             local litersPerSecond = getXMLFloat(xmlFile, xmlKey .."#litersPerSecond")
             local typeName = getXMLString(xmlFile, xmlKey .."#type")
             local sprayGroundType = g_currentMission.fieldGroundSystem:getFieldSprayValueByName(getXMLString(xmlFile, xmlKey .."#sprayGroundType")) -- index 1
-            local isBaseType = false
+            local isBaseType = true
 			main:Log("Adding SprayType 'LiquidLime'")
 			g_sprayTypeManager:addSprayType(name, litersPerSecond, typeName, sprayGroundType, isBaseType)
 			main:Log("Adding MaterialHolder")
@@ -39,7 +39,7 @@ function main:loadMap()
 end;
 
 function main:Log(msg)
-	print("\n [" .. modName .. "] - " .. msg);
+	print("[" .. modName .. "] - " .. msg .. "\n");
 end;
 
 addModEventListener(main);
