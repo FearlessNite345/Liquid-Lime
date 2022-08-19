@@ -15,12 +15,16 @@ Adds Liquid Lime to the game for Sprayers.
 
 Liquid Lime Pallet:
 - Capacity: 2000
-- Price: 1000]]></en>
+- Price: 1000
+
+Liquid Lime Silo:
+- Capacity: 173500 
+- Price: 46500]]></en>
 	<fr><![CDATA[LiquideChaux
 
 Ajoute de la chaux liquide au jeu pour les pulvérisateurs.
 
-Palette de chaux liquide :
+Palette de chaux liquide:
 - Capacité : 2000
 - Prix : 1000]]></fr>
 	<de><![CDATA[Flüssigkalk
@@ -47,6 +51,12 @@ Flüssigkalk-Palette:
 			<de>Flüssigkalk-Palette zum auffüllen deiner Sprühgeräte mit Flüssigkalk.</de>
 			<fr>Liquid Lime Pallet vous permet de remplir les pulvérisateurs avec LiquidLime.</fr>
 		</text>
+		<text name="function_liquidlimesilo">
+			<en>Liquid Lime Silo is made to store LiquidLime</en>
+		</text>
+		<text name="name_liquidlimesilo">
+			<en>Liquid Lime Silo</en>
+		</text>
 	</l10n>
 
 	<extraSourceFiles>
@@ -55,6 +65,7 @@ Flüssigkalk-Palette:
 
 	<storeItems>
 		<storeItem xmlFilename="objects/LiquidLimePallet/liquidLimePallet.xml" />
+		<storeItem xmlFilename="objects/LiquidLimeSilo/liquidLimeSilo.xml" />
 	</storeItems>
 
 	<brands>
