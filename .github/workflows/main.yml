@@ -12,4 +12,4 @@ jobs:
       - uses: papeloto/action-zip@v1
         with:
           files: modDesc.xml
-          dest: result.zip
+          dest: ${{ github.workspace }}/result.zip
