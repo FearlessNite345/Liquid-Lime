@@ -6,7 +6,7 @@ on:
         tag:
           description: 'Define tag'     
           required: true
-          default: '1.0.0.0'
+          default: ''
 
 jobs:
   zip-files:
@@ -27,6 +27,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ github.workspace }}/FS22_LiquidLime.zip
           asset_name: FS22_LiquidLime.zip
-          tag: 1.0.1.0
+          tag: ${{ github.event.inputs.tag }}
           overwrite: true
           body: "This is my auto release test"
