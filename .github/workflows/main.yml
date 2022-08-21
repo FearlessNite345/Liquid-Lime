@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: papeloto/action-zip@v1
         with:
-          files: xml/ src/ objects/ material_holders/ hud/ brand/ modDesc.xml modIcon.dds
+          files: xml/ src/ objects/ material_holders/ hud brand/ modDesc.xml modIcon.dds
           recursive: true
           dest: result.zip
       - uses: actions/upload-artifact@v1
