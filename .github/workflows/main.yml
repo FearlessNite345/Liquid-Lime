@@ -7,7 +7,7 @@ on:
           description: 'Define tag'     
           required: true
           default: ''
-        message:
+        changes:
           description: 'Changes'
           required: true
         useartifact:
