@@ -22,7 +22,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ github.workspace }}/FS22_LiquidLime.zip
-          asset_name: testing123
-          tag: test123
+          asset_name: FS22_LiquidLime.zip
+          tag: 1.0.1.0
           overwrite: true
           body: "This is my auto release test"
