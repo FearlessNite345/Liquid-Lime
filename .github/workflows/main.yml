@@ -23,7 +23,8 @@ jobs:
           files: modDesc.xml modIcon.dds xml/ src/ objects/ material_holders/ hud/ brand/
           recursive: false
           dest: FS22_LiquidLime.zip
-      - uses: actions/upload-artifact@v1
+      - if: github.event.inputs.useartifact == true
+        uses: actions/upload-artifact@v1
         with:
           name: Test
           path: ${{ github.workspace }}/FS22_LiquidLime.zip
