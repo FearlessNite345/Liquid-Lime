@@ -7,6 +7,11 @@ on:
           description: 'Define tag'     
           required: true
           default: ''
+        useartifact:
+          description: 'Use Artifact?'
+          type: boolean
+          required: true
+          default: false
 
 jobs:
   zip-files:
