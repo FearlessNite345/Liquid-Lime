@@ -45,4 +45,4 @@ jobs:
           asset_name: FS22_LiquidLime.zip
           tag: ${{ github.event.inputs.tag }}
           overwrite: true
-          body: github.event.inputs.changes
+          body: ${{ github.event.inputs.changes }}
