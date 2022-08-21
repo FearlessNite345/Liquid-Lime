@@ -7,6 +7,10 @@ on:
           description: 'Define tag'     
           required: true
           default: ''
+        changes:
+          description: 'Changes'     
+          required: true
+          default: ''
         useartifact:
           description: 'Use Artifact'
           type: boolean
@@ -41,4 +45,4 @@ jobs:
           asset_name: FS22_LiquidLime.zip
           tag: ${{ github.event.inputs.tag }}
           overwrite: true
-          body: "This is my auto release test"
+          body: github.event.inputs.changes
