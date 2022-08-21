@@ -1,4 +1,4 @@
-name: Zip Files
+name: Zip & Publish
 
 on:
   push:
@@ -18,3 +18,11 @@ jobs:
         with:
           name: Test
           path: ${{ github.workspace }}/FS22_LiquidLime.zip
+      - uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ github.workspace }}/FS22_LiquidLime.zip
+          asset_name: testing123
+          tag: test123
+          overwrite: true
+          body: "This is my auto release test"
