@@ -13,27 +13,17 @@
 
 Adds Liquid Lime to the game for Sprayers.
 
-Liquid Lime Pallet:
+Liquid Lime Tank:
 - Capacity: 2000
-- Price: 1000
+- Price: 2200
+
+Liquid Lime Canister:
+- Capacity: 100/150/200
+- Price: 60/90/120
 
 Liquid Lime Silo:
 - Capacity: 173500 
 - Price: 46500]]></en>
-	<fr><![CDATA[LiquideChaux
-
-Ajoute de la chaux liquide au jeu pour les pulvérisateurs.
-
-Palette de chaux liquide:
-- Capacité : 2000
-- Prix : 1000]]></fr>
-	<de><![CDATA[Flüssigkalk
-
-Fügt Flüssigkalk zu Düngespritzen aus dem Basegame hinzu.
-
-Flüssigkalk-Palette:
-- Kapazität: 2000
-- Preis: 1000]]></de>
 	</description>
 	
 	<iconFilename>modIcon.dds</iconFilename>
@@ -43,19 +33,21 @@ Flüssigkalk-Palette:
 	<l10n>
 		<text name="filltype_liquidlime">
 			<en>Liquid Lime</en>
-			<de>Flüssigkalk</de>
-			<fr>Chaux Liquide</fr>
 		</text>
 		<text name="function_liquidlimepallet">
-			<en>Liquid Lime Pallet allows you to fill sprayers with LiquidLime.</en>
-			<de>Flüssigkalk-Palette zum auffüllen deiner Sprühgeräte mit Flüssigkalk.</de>
-			<fr>Liquid Lime Pallet vous permet de remplir les pulvérisateurs avec LiquidLime.</fr>
+			<en>Liquid Lime Tank allows you to fill sprayers with LiquidLime.</en>
 		</text>
 		<text name="function_liquidlimesilo">
 			<en>Liquid Lime Silo is made to store LiquidLime</en>
 		</text>
 		<text name="name_liquidlimesilo">
 			<en>Liquid Lime Silo</en>
+		</text>
+		<text name="LL_Canister">
+			<en>Liquid Lime Canister</en>
+		</text>		
+		<text name="function_LL_Canister">
+			<en>Liquid Lime Canister allows you to fill sprayers with LiquidLime</en>
 		</text>
 	</l10n>
 
@@ -64,12 +56,13 @@ Flüssigkalk-Palette:
 	</extraSourceFiles>
 
 	<storeItems>
-		<storeItem xmlFilename="objects/LiquidLimePallet/liquidLimePallet.xml" />
+		<storeItem xmlFilename="objects/LiquidLimeTank/liquidLimeTank.xml" />
 		<storeItem xmlFilename="objects/LiquidLimeSilo/liquidLimeSilo.xml" />
+		<storeItem xmlFilename="objects/LiquidLimeCanister/LL_Canister.xml" />
 	</storeItems>
 
 	<brands>
-		<brand name="LIZARDFARMING" title="Lizard Farming" image="$data/store/brands/brand_lizardFarming.dds" />
+		<brand name="FEARLESSMODDING" title="Fearless Modding" image="brand/brand_FM.dds" />
 	</brands>
 
 	<fillTypes filename="xml/fillTypes.xml" />

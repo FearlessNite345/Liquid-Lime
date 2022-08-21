@@ -5,8 +5,8 @@
 		<fillType name="LIQUIDLIME" title="$l10n_filltype_liquidlime" showOnPriceTable="true">
 			<physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
             <image hud     ="hud/liquidlime.dds" />
-			<pallet filename="objects/LiquidLimePallet/liquidLimePallet.xml" />
-			<economy pricePerLiter="0.5" />
+			<pallet filename="objects/LiquidLimeTank/liquidLimeTank.xml" />
+			<economy pricePerLiter="0.75" />
 		</fillType>
     </fillTypes>
 
