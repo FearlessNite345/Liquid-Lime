@@ -1,6 +1,12 @@
 name: Zip & Publish
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+        tag:
+          description: 'Define tag'     
+          required: true
+          default: '1.0.0.0'
 
 jobs:
   zip-files:
