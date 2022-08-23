@@ -6,20 +6,19 @@ on:
         tag:
           description: 'Define tag'     
           required: true
-          default: ''
-        changes:
-          description: 'Changes'
-          required: true
+          default: '0.0.0.0'
+
         useartifact:
           description: 'Use Artifact'
           type: boolean
           required: true
           default: false
+
         uploadrelease:
           description: 'Upload Release'
           type: boolean
           required: true
-          default: false
+          default: true
 
 jobs:
   zip-files:
@@ -31,17 +30,17 @@ jobs:
           files: modDesc.xml modIcon.dds xml/ src/ objects/ material_holders/ hud/ brand/
           recursive: false
           dest: FS22_LiquidLime.zip
-      - if: github.event.inputs.useartifact == 'true'
+
+      - if: inputs.useartifact
         uses: actions/upload-artifact@v1
         with:
           name: Test
           path: ${{ github.workspace }}/FS22_LiquidLime.zip
-      - if: github.event.inputs.uploadrelease == 'true'
-        uses: svenstaro/upload-release-action@v2
+
+      - if: inputs.uploadrelease
+        uses: softprops/action-gh-release@v1
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ${{ github.workspace }}/FS22_LiquidLime.zip
-          asset_name: FS22_LiquidLime.zip
-          tag: ${{ github.event.inputs.tag }}
-          overwrite: true
-          body: ${{ github.event.inputs.changes }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: ${{ github.workspace }}/FS22_LiquidLime.zip
+          tag_name: ${{ inputs.tag }}
+          name: ${{ inputs.release_name }}
