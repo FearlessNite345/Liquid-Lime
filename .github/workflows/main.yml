@@ -8,12 +8,6 @@ on:
           required: true
           default: '0.0.0.0'
 
-        useartifact:
-          description: 'Use Artifact'
-          type: boolean
-          required: true
-          default: false
-
         uploadrelease:
           description: 'Upload Release'
           type: boolean
@@ -30,16 +24,7 @@ jobs:
       - run: zip -r "$ARCHIVE_NAME" modDesc.xml modIcon.dds xml/ src/ objects/ material_holders/ hud/ brand/
         env:
           ARCHIVE_NAME: FS22_LiquidLime.zip
-          
-     # - uses: papeloto/action-zip@v1
-     #   with:
-     #     files: modDesc.xml modIcon.dds xml/ src/ objects/ material_holders/ hud/ brand/
-     #     recursive: false
-     #     dest: FS22_LiquidLime.zip
 
-  release-LL:
-    runs-on: ubuntu-latest
-    steps:
       - if: inputs.uploadrelease
         uses: softprops/action-gh-release@v1
         with:
